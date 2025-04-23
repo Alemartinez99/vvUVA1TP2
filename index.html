@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../index.css" />
-    <title>Sobre mí</title>
-  </head>
-  <body>
-    <header>
-      <h1>Diseño y Desarrollo Web</h1>
-    </header>
 
-    <section>
-      <h3>Bibliografia de la materia</h3>
-      <ul>
-        <li>
-          NIEDERST ROBBINS, Jennifer. HTML5 Pocket Reference Quick,
-          Comprehensive, Indispensable (Pocket Reference (O'Reilly)). 5ta. Ed.
-          Págs. 1 a 4, 6 y 7. EE.UU.: O'Reilly Media, 2013
-        </li>
-        <li>
-          MEYER, Eric A. Capítulo 1: conceptos básicos. En CSS Pocket Reference.
-          4ta ed. Sebastopol, California: O'Reilly Media, 2011. Pp. 1-13
-        </li>
-        <li>
-          SCHULZ, Ralph G. Diseño web con CSS. 1a ed. México, D. F.: Alfaomega,
-          2009. Pp. 1-21
-        </li>
-      </ul>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Sobre mí</title>
+</head>
 
-    <section>
-      <h3>Fechas de examenes</h3>
-      <ul>
-        <li><strong>Parcial 1</strong>: 25 de abril</li>
-        <li><strong>Parcial 2</strong>: 13 de junio</li>
-      </ul>
-    </section>
+<body>
+  <!-- Header del menú -->
+  <header class="bg-light text-center py-4">
+    <strong>Enlaces del menú</strong>
+  </header>
 
-    <section>
-      <h3>Actividades UVAs</h3>
-      <ul>
-        <li><h4>Activiades UVA 1</h4></li>
-        <ul>
-          <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557800/View" target="_blank">HTML - INTRODUCCION</a></li>
-          <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557802/View" target="_blank">HTML - ETIQUETAS</a></li>
-          <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557805/View" target="_blank">HTML - TP INTEGRADOR</a></li>
-        </ul>
-        <li><h4>Activiades UVA 1</h4></li>
-        <ul>
-          <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557831/View" target="_blank">Diseño de interfaz - FORMATO DE TEXTO</a></li>
-          <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557833/View" target="_blank">Diseño de interfaz - FORMATO DE CAJAS</a></li>
-          <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557848/View" target="_blank">Diseño de interfaz - UNIDADES DE MEDIDAS</a></li>
-          <li><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557842/View" target="_blank">Diseño de interfaz - GRID Y FLEXBOX</a></li>
-        </ul>
-      </ul>
-    </section>
-  </body>
+  <!-- Título principal -->
+  <div class="container text-center mt-4">
+    <h1>Diseño y Desarrollo Web</h1>
+  </div>
+
+  <!-- Contenido principal -->
+  <main class="container mt-4" id="contenedor-principal">
+    <div class="row">
+      <!-- Columna izquierda -->
+      <div class="col-md-4">
+        <div class="seccion mb-3 bg-light">
+          <h5>Fechas de exámenes</h5>
+          <ul class="list-unstyled px-3">
+            <li>Primer  Parcial: 25 de abril</li>
+            <li>Segundo Parcial: 13 de junio</li>
+          </ul>
+        </div>
+        <div class="seccion bg-light">
+          <h5>Bibliografía</h5>
+          <ul class="list-unstyled px-3">
+            <li>Primer  Parcial: 25 de abril</li>
+            <li>Segundo Parcial: 13 de junio</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Columna derecha -->
+      <div class="col-md-8 bg-light">
+        <div class="seccion h-100 px-3 ">
+          <h5>Actividades UVAs</h5>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-light text-center py-3 mt-4">
+    Curso: Nro curso / Profesora: Patricia Litovicius
+  </footer>
+</body>
+
 </html>
