@@ -15,6 +15,6 @@ main {
   flex: 1;
 }
 
-#titulo-h5 {
-  right: 200px !important;
+li {
+  padding: 5px 0;
 }
