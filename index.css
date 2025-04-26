@@ -1,3 +1,4 @@
+/* Reset global: elimina márgenes, rellenos y establece box-sizing */
 * {
   /* Esto lo pongo siempre */
   margin: 0;
@@ -5,45 +6,57 @@
   box-sizing: border-box;
 }
 
+/* Establece el 100% de altura para html y body */
 html,
 body {
   height: 100%;
 }
+
+/* Hace que el body use un layout flex en columna */
 body {
   display: flex;
   flex-direction: column;
 }
 
+/* Hace que el main ocupe todo el espacio disponible */
 main {
   flex: 1;
 }
 
+/* Agrega espacio en los elementos de lista */
 li {
   padding: 5px 0;
 }
 
+/* Elimina el subrayado de los enlaces */
 a {
   text-decoration: none !important;
 }
 
+/* Asegura que los elementos con #sacar-estilo hereden el color */
 #sacar-estilo {
   color: inherit !important;
 }
 
+/* Barra de navegación con fondo blanco */
 nav {
   background-color: rgb(255, 255, 255) !important;
   width: 100%;
 }
+
+/* Flexbox en el contenedor para organizar los elementos */
 .container-fluid {
   display: flex;
   justify-content: space-between;
 }
 
+/* Centra el icono de inicio */
 .mi-icono-inicio {
   display: flex;
   justify-content: center;
 }
 
+/* Estilo para el enlace del icono de inicio */
 .mi-icono-inicio a {
   display: flex;
   justify-content: center;
@@ -51,6 +64,7 @@ nav {
   padding-left: 50px;
 }
 
+/* Estilo para el texto del icono de inicio */
 .mi-icono-inicio span {
   display: flex;
   font-size: 2rem;
@@ -58,27 +72,32 @@ nav {
   margin-bottom: 1%;
 }
 
+/* Oculta el texto en pantallas pequeñas (menos de 530px) */
 @media screen and (max-width: 530px) {
   .mi-icono-inicio span {
     display: none;
   }
 }
 
+/* Da un borde redondeado al icono y lo ajusta a un 70% de su tamaño original */
 #uade-icon {
   border-radius: 16px;
   width: 70%;
 }
 
+/* Estilo para el logo con fondo azul */
 .label_logo {
   background-color: #0a71a6;
   text-transform: uppercase;
 }
 
+/* Barra de navegación en un layout flex, desplazada 200px a la izquierda */
 .mi-nav-bar {
   display: flex;
   margin-left: 200px;
 }
 
+/* Estilo para los enlaces dentro de la barra de navegación */
 .mi-nav-bar a {
   display: flex !important;
   color: rgb(0, 0, 0);
@@ -86,15 +105,18 @@ nav {
   font-size: 1.9rem;
 }
 
+/* Asegura que los elementos en el navbar se distribuyan uniformemente */
 .navbar-collapse {
   justify-content: space-evenly !important;
 }
 
+/* Efecto de hover para los enlaces y el icono */
 .mi-nav-bar a:hover,
 #uade-icon:hover {
   transform: scale(1.4);
 }
 
+/* Media query para pantallas menores a 1450px, ajusta márgenes y tamaños de fuente */
 @media screen and (max-width: 1450px) {
   .mi-nav-bar {
     margin-left: 50px;
@@ -104,6 +126,7 @@ nav {
   }
 }
 
+/* Media query para pantallas menores a 1237px, ajusta el tamaño de fuente */
 @media screen and (max-width: 1237px) {
   .mi-nav-bar {
     margin-left: 0px;
@@ -113,26 +136,36 @@ nav {
   }
 }
 
+/* Media query para pantallas menores a 1199px, reorganiza los elementos de la barra de navegación */
 @media screen and (max-width: 1199px) {
 
+  /* Ajusta el logo a un 100% de ancho */
   .mi-logo {
     width: 100%;
   }
+
+  /* Elimina el padding del enlace del icono */
   .mi-icono-inicio a {
     padding: 0;
   }
-  .mi-nav-bar{
+
+  /* Organiza la barra de navegación en una columna, alineada a la derecha */
+  .mi-nav-bar {
     width: 100% !important;
     flex-direction: column !important;
     justify-content: flex-end !important;
     align-items: flex-end !important;
   }
+
+  /* Posiciona el botón de hamburguesa en la parte superior derecha */
   .mi-hamburguesa {
     position: fixed;
     top: 1%;
     right: 20px;
   }
 }
+
+/* Efecto de hover para el botón de hamburguesa */
 .navbar-toggler:hover {
   background-color: #ffffff;
 }
